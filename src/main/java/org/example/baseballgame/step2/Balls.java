@@ -44,4 +44,21 @@ public class Balls {
 
         return decisionCount;
     }
+
+    public List<Ball> getBallList() {
+        return ballList;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("Balls{ ballList= [");
+        for(Ball ball : ballList){
+            sb.append(ball.getValue()).append(" ");
+        }
+        sb.append("], SIZE=").append(SIZE).append("}");
+
+        return sb.toString();
+    }
 }
