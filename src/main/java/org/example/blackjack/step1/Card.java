@@ -1,5 +1,7 @@
 package org.example.blackjack.step1;
 
+import java.util.Objects;
+
 public class Card {
 
     private final CardShape shape;
@@ -9,6 +11,10 @@ public class Card {
     public Card(CardShape shape, CardValue value){
         this.shape = shape;
         this.value = value;
+    }
+
+    public int getScore(){
+        return value.getScore();
     }
 
     @Override
@@ -23,5 +29,10 @@ public class Card {
 
         return this.shape.equals(card.shape)
                 && this.value.equals(card.value);
+    }
+
+    @Override
+    public int hashCode(){
+        return Objects.hash(shape, value);
     }
 }
