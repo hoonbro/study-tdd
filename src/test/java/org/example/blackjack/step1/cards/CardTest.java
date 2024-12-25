@@ -1,4 +1,4 @@
-package org.example.blackjack.step1;
+package org.example.blackjack.step1.cards;
 
 import org.example.blackjack.step1.cards.Card;
 import org.example.blackjack.step1.cards.CardShape;
