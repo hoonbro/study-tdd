@@ -1,5 +1,9 @@
 package org.example.blackjack.step1;
 
+import org.example.blackjack.step1.cards.Card;
+import org.example.blackjack.step1.cards.CardShape;
+import org.example.blackjack.step1.cards.CardValue;
+import org.example.blackjack.step1.cards.Cards;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
