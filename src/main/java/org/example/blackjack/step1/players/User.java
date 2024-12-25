@@ -1,4 +1,7 @@
-package org.example.blackjack.step1;
+package org.example.blackjack.step1.players;
+
+import org.example.blackjack.step1.cards.Card;
+import org.example.blackjack.step1.cards.Cards;
 
 public abstract class User {
     protected Cards hand;

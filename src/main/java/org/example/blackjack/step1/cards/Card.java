@@ -1,4 +1,4 @@
-package org.example.blackjack.step1;
+package org.example.blackjack.step1.cards;
 
 import java.util.Objects;
 
