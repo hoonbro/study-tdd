@@ -11,6 +11,8 @@ public abstract class User {
     }
 
     public void addCard(Card card){
+        if(!canDraw())
+            throw new IllegalArgumentException("cannot draw");
         hand.addCard(card);
     }
 

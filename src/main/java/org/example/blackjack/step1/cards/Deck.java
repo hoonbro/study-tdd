@@ -4,12 +4,10 @@ import org.example.blackjack.step1.cards.Card;
 import org.example.blackjack.step1.cards.CardShape;
 import org.example.blackjack.step1.cards.CardValue;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Deck {
-    List<Card> cardList;
+    private List<Card> cardList;
 
     public Deck(){
         cardList = new ArrayList<>();
@@ -32,5 +30,17 @@ public class Deck {
 
     public Card draw(){
         return cardList.remove(0);
+    }
+
+    public int size(){
+        return cardList.size();
+    }
+
+    public Set<Card> toSet(){
+        return new HashSet<>(cardList);
+    }
+
+    public List<Card> toList(){
+        return new ArrayList<>(cardList);
     }
 }
