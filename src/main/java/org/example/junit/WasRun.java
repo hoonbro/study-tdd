@@ -19,7 +19,7 @@ public class WasRun {
         return wasRun;
     }
 
-    public void run(){
+    public void run(Class<?> testClass){
         try{
             Method method = getClass().getMethod(name);
             method.invoke(this);
