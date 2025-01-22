@@ -1,5 +1,7 @@
 package org.example.junit;
 
+import org.example.junit.common.annotation.*;
+
 public class JunitTest {
 
     @BeforeAll
@@ -13,6 +15,13 @@ public class JunitTest {
     @Test
     public void simpleTest(){
         System.out.println("Execute Test");
+    }
+
+    @Test
+    public void failedTest(){
+        System.out.println("Failed Test");
+
+        throw new RuntimeException();
     }
     @AfterEach
     public void tearDown(){
